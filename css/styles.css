@@ -56,7 +56,9 @@ a {
 }
 
 /* ---Шапка--- */
-
+header{
+  border-bottom: 1px solid #ECECEC;
+}
 .logo-web {
   color: var(--color-hover);
 }
@@ -130,15 +132,18 @@ a {
 }
 
 /* ---Основний контент--- */
-/* Герой */
 
+/* Герой */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .hero {
   background-color: var(--background-hero-footer-col);
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .hero-title {
+  display: flex;
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -147,6 +152,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
+  margin-bottom: 30px;
 }
 
 .hero-block {
@@ -174,6 +180,7 @@ a {
 .button-portf {
   cursor: pointer;
   font-family: inherit;
+  padding: 6px 22px;
 }
 
 .button-portf {
@@ -182,13 +189,25 @@ a {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+  border: transparent;
+  border-radius: 4px;
 }
 
 .button-portf:hover,
-.button-portf:focus,
+.button-portf:focus,  
 .button-portf:active {
   color: var(--hero-text-color);
   background-color: var(--color-hover);
+}
+
+.buttons-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.buttons-block li:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Особливості */
@@ -206,9 +225,20 @@ a {
   margin: -1px;
 }
 
+.features-block {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  gap: 30px;
+}
+
+.features-block li {
+  flex-basis: calc((100% - 90px) / 4);
+}
+
 .features-title {
   color: var(--title-text-color);
-
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -220,27 +250,28 @@ a {
   line-height: 1.71;
 }
 
-.features-block {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* Чим ми займаємося */
 
 .work-title,
 .team-title {
+  display: flex;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
-  margin-bottom: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
-/* .work-block{
+.work-block {
   display: flex;
+  margin-bottom: 94px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
-} */
+.work-item {
+  flex-basis: calc((100% - 60px) / 3);
+}
 
 /* Наша команда */
 
@@ -253,12 +284,27 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.team-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-block li {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 /* Приклади робіт - стор.Портфоліо */
@@ -276,6 +322,12 @@ a {
   line-height: 1.88;
 }
 
+.example-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 /* ---Футер--- */
 
 footer {
@@ -284,6 +336,9 @@ footer {
 
 .footer-logo {
   color: var(--white-color);
+  display: inline-block;
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
 footer a {
@@ -293,9 +348,17 @@ footer a {
 .footer-contacts .adres {
   color: var(--white-color);
 }
+
 .footer-contacts a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
+}
+.footer-contacts {
+  display: inline-block;
+  padding-bottom: 60px;
+}
+.footer-contacts li:nth-child(n + 1) {
+  margin-bottom: 9px;
 }

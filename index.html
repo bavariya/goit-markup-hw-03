@@ -38,7 +38,7 @@
     <!--Основний контент-->
     <main>
       <!--Герой-->
-      <section class="hero">
+      <section class="hero section">
         <div class="container hero-block">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button">Замовити послугу</button>
@@ -46,7 +46,7 @@
       </section>
       <!--Особливості-->
 
-      <section class="features">
+      <section class="features section">
         <div class="container">
           <h2 class="non-display">Особливості</h2>
           <ul class="list features-block">
@@ -79,23 +79,29 @@
       </section>
 
       <!--Чим ми займаємося-->
-      <section class="work">
+      <section class="work section">
         <div class="container">
           <h2 class="work-title">Чим ми займаємося</h2>
           <ul class="list work-block">
-            <li><img src="./images/box1.jpg" alt="верстка_сторінок" width="370" /></li>
-            <li><img src="./images/box2.jpg" alt="оформлення_сайту" width="370" /></li>
-            <li><img src="./images/box3.jpg" alt="розробка_дизайну" width="370" /></li>
+            <li class="work-item">
+              <img src="./images/box1.jpg" alt="верстка_сторінок" width="370" />
+            </li>
+            <li class="work-item">
+              <img src="./images/box2.jpg" alt="оформлення_сайту" width="370" />
+            </li>
+            <li class="work-item">
+              <img src="./images/box3.jpg" alt="розробка_дизайну" width="370" />
+            </li>
           </ul>
         </div>
       </section>
 
       <!--Наша команда-->
 
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="list team-block">
             <li>
               <img src="./images/img_Igor.jpg" alt="Дизайнер_продуктів" width="270" />
               <h3 class="team-member">Ігор Дем'яненко</h3>
@@ -126,6 +132,7 @@
     </main>
     <!--Футер-->
     <footer>
+      <div class="container">
       <a class="footer-logo" lang="en" href="./index.html"
         ><span class="logo-web">Web</span>Studio</a
       >
@@ -138,6 +145,7 @@
           <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
