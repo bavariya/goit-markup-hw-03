@@ -77,12 +77,15 @@ header {
   line-height: 1.19;
 }
 
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .header-block {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .nav-block {
@@ -140,10 +143,12 @@ header {
 }
 .hero {
   background-color: var(--background-hero-footer-col);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
-  display: flex;
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -153,14 +158,8 @@ header {
   text-transform: uppercase;
   width: 696px;
   margin-bottom: 30px;
-}
-
-.hero-block {
-  display: flex;
-  justify-items: center;
-  flex-direction: column;
-  row-gap: 30px;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -170,6 +169,7 @@ header {
   font-size: 16px;
   line-height: 1.88;
   min-width: 216px;
+  height: 50px;
   padding: 10px 32px;
   letter-spacing: 0.06em;
   border-radius: 4px;
@@ -228,8 +228,6 @@ header {
 .features-block {
   display: flex;
   justify-content: space-between;
-  padding-top: 94px;
-  padding-bottom: 94px;
   gap: 30px;
 }
 
@@ -242,6 +240,7 @@ header {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .about-features {
@@ -252,19 +251,21 @@ header {
 
 /* Чим ми займаємося */
 
+.work {
+  padding-top: 0;
+}
+
 .work-title,
 .team-title {
-  display: flex;
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
-  justify-content: center;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .work-block {
   display: flex;
-  margin-bottom: 94px;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -285,7 +286,7 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .team-position {
@@ -294,7 +295,7 @@ header {
   line-height: 1.19;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-block {
@@ -305,6 +306,10 @@ header {
 
 .team-block li {
   flex-basis: calc((100% - 90px) / 4);
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Приклади робіт - стор.Портфоліо */
@@ -314,6 +319,7 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .example-group {
@@ -328,23 +334,27 @@ header {
   gap: 30px;
 }
 .example-block li {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
+.box {
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  flex-basis: calc((100% - 68px) / 3);
+  padding: 20px 24px;
 }
-
 
 /* ---Футер--- */
 
 footer {
   background-color: var(--background-hero-footer-col);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
   color: var(--white-color);
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -366,6 +376,6 @@ footer a {
   display: inline-block;
   padding-bottom: 60px;
 }
-.footer-contacts li:nth-child(n + 1) {
+.footer-contacts li:nth-child(-n + 2) {
   margin-bottom: 9px;
 }
