@@ -346,7 +346,7 @@ header {
 
 /* ---Футер--- */
 
-footer {
+.footer-block {
   background-color: var(--background-hero-footer-col);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -372,10 +372,7 @@ footer a {
   line-height: 1.71;
   letter-spacing: 0.02em;
 }
-.footer-contacts {
-  display: inline-block;
-  padding-bottom: 60px;
-}
+
 .footer-contacts li:nth-child(-n + 2) {
   margin-bottom: 9px;
 }
